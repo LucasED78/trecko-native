@@ -37,6 +37,7 @@ export default function App() {
       setLoading(false);
     } catch(_) {
       ToastAndroid.show("Ocorreu um erro ao tentar rastrear o código! Tente novamente", ToastAndroid.SHORT);
+      setLoading(false);
     }
   }
 
