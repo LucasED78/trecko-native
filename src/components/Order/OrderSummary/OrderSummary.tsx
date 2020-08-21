@@ -1,6 +1,6 @@
 import React from 'react';
-import OrderTitle from './OrderTitle';
-import OrderDescription from './OrderDescription';
+import OrderTitle from '../OrderTitle/OrderTitle';
+import OrderDescription from '../OrderDescription/OrderDescription';
 import { View } from 'react-native';
 
 export interface OrderSummaryProps {

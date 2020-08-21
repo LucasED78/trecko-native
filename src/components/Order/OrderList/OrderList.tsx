@@ -1,7 +1,7 @@
 import React from 'react';
-import { Order } from "../../models/Order";
+import { Order } from "../../../models/Order";
 import { FlatList } from "react-native";
-import OrderSummary from "./OrderSummary";
+import OrderSummary from "../OrderSummary/OrderSummary";
 
 export interface OrderListProps {
   order: Order

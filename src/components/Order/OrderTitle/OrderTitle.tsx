@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-export interface OrderTitle {
+export interface OrderTitleProps {
   title?: string
 }
 
-const OrderTitle = (props: OrderTitle) => {
+const OrderTitle = (props: OrderTitleProps) => {
   return (
     <Text style={style.title}>
       { props?.title }

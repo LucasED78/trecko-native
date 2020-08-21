@@ -3,7 +3,7 @@ import { SafeAreaView, ToastAndroid, ActivityIndicator } from 'react-native';
 import UnderlineInput from './src/components/Input/UnderlineInput';
 import OrderServiceImpl from './src/services/order/OrderServiceImpl';
 import { Order, OrderTracks } from './src/models/Order';
-import OrderList from './src/components/Order/OrderList';
+import OrderList from './src/components/Order/OrderList/OrderList';
 import IconButton from './src/components/Button/IconButton';
 import VerticalContainer from './src/components/VerticalContainer/VerticalContainer';
 

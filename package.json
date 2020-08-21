@@ -5,10 +5,18 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ]
   },
   "dependencies": {
     "@types/react-native-uuid": "^1.4.0",
+    "@types/react-test-renderer": "^16.9.3",
     "axios": "^0.19.2",
     "expo": "~38.0.8",
     "expo-status-bar": "^1.0.2",
@@ -21,8 +29,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
+    "@types/jest": "^26.0.10",
     "@types/react": "~16.9.41",
     "@types/react-native": "~0.62.13",
+    "jest-expo": "^38.0.2",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.2.0",
     "typescript": "~3.9.5"
   },
   "private": true
