@@ -19,6 +19,7 @@ export default function App() {
 
     try {
       setLoading(true);
+      setOrder(null);
 
       const response = await new OrderServiceImpl()
         .get(code);
